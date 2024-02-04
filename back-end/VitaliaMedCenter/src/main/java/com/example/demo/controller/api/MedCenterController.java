@@ -15,7 +15,7 @@ import com.example.demo.model.Prodotto;
 
 //
 @RestController
-public class EcommerceController {
+public class MedCenterController {
 	
 	// ci mostra tutti i prodotti in file json ovviamente quelli memorizzati in prodotti
 	@GetMapping("/api/prodotti")

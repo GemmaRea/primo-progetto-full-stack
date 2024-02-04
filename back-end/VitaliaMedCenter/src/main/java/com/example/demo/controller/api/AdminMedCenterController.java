@@ -11,10 +11,10 @@ import org.springframework.web.server.ResponseStatusException;
 import com.example.demo.model.Prodotto;
 
 @RestController
-public class AdminEcommercController {
+public class AdminMedCenterController {
 	private List <Prodotto> list;
 	private int lastId;
-	public  AdminEcommercController() {
+	public  AdminMedCenterController() {
 		list =  new ArrayList <Prodotto>();
 		list.add(new Prodotto (1, "primoProdotto"));
 		list.add(new Prodotto (2,"secondoProdotto"));
