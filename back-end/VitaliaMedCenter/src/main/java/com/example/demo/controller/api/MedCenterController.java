@@ -1,7 +1,6 @@
 package com.example.demo.controller.api;
 // metodo REST
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
@@ -11,45 +10,34 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.example.demo.model.Prodotto;
+import com.example.demo.service.ProdottoService;
 // questo ci permette di trasformare il risultato in file json
 
-//
+// al controller interessa visualizzare i prodotti e ricercarli ma non interessa nessun altra operazione di crud in quanto spetta all'admin
 @RestController
 public class MedCenterController {
 	
-	// ci mostra tutti i prodotti in file json ovviamente quelli memorizzati in prodotti
+	private ProdottoService prodottoService;
+	
+	public MedCenterController() {
+		prodottoService = new ProdottoService();
+	}
+	
 	@GetMapping("/api/prodotti")
-	/*possiamo rendere il tutto dinamico in questo modo:
-	 * 
-    @GetMapping("/api/{tipo}")
-    public <T> Iterable<T> getAll(@PathVariable String tipo) {
-        List<T> list;
-        
-        switch (tipo.toLowerCase()) {
-            case "prodotti":
-                list = (List<T>) generateDynamicProductList();
-                break;
-            case "utenti":
-                list = (List<T>) generateDynamicUserList();
-                break;
-            default:
-                throw new IllegalArgumentException("Tipo non supportato: " + tipo);
-        }
-
-        return list;
-	 */
-public Iterable<Prodotto> getAll(){
-		List <Prodotto> list = new ArrayList <Prodotto>();
-		return list;
+	
+	public Iterable<Prodotto> getAll(){
+		
+		return prodottoService.getAll();
 }
-	// ci mostra un solo prodotto in base all'id che viene richiesto
+	
 	@GetMapping("/api/prodotti/{id}")
 	public Prodotto getById (@PathVariable int id) {
-		List <Prodotto> list = new ArrayList <Prodotto>();
-		Optional <Prodotto> prodotto = list.stream().filter(item -> item.getId()==id).findFirst();
+		Optional <Prodotto> prodotto = prodottoService.getById(id);
+		
 		 if (prodotto.isEmpty()) {
 			 throw new ResponseStatusException(HttpStatus.NOT_FOUND, "item not found");
 		 }
+		
 		 return prodotto.get();
 	}
 }
