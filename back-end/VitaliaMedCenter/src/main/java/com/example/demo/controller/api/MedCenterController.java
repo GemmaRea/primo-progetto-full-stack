@@ -2,10 +2,12 @@ package com.example.demo.controller.api;
 // metodo REST
 
 import java.util.Optional;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -42,11 +44,35 @@ public class MedCenterController {
 
 	// getAll per le varie table
 	// medico
+	@CrossOrigin(origins = "http://localhost:4200")
 	@GetMapping("/api/medico")
 
 	public Iterable<Medico> getAllMedico() {
 
 		return medicoService.getAll();
+	}
+
+	//restituisce le visite collegate ad un medico specifico
+	@GetMapping("/api/medico/visite/{id}")
+
+	public Set<Visita> getAllMedicoVisite(@PathVariable int id) {
+		Optional<Medico> medicoOptional = medicoService.getById(id);
+		if (medicoOptional.isEmpty()) {
+			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Medico non trovato con ID: " + id);
+		}
+		Medico medico = medicoOptional.get();
+		return medico.getVisite();
+	}	
+	//restituisce le visite collegate ad un paziente specifico
+	@GetMapping("/api/paziente/visite/{id}")
+
+	public Set<Visita> getAllPazienteVisite(@PathVariable int id) {
+		Optional<Paziente> pazienteOptional = pazienteService.getById(id);
+		if (pazienteOptional.isEmpty()) {
+			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Paziente non trovato con ID: " + id);
+		}
+		Paziente paziente = pazienteOptional.get();
+		return paziente.getVisite();
 	}
 
 	// paziente

@@ -1593,3 +1593,21 @@ Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/Sh
 2024-02-08 12:05:17,276 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-02-08 12:05:17,284 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-02-08 12:05:17,290 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\win10pro\Desktop\primo_progetto_angular_java\primo_e-commerce\back-end\VitaliaMedCenter\src\test\resources
+2024-02-08 12:44:36,876 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-08 12:44:36,899 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-08 12:44:36,902 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\win10pro\Desktop\primo_progetto_angular_java\primo_e-commerce\back-end\VitaliaMedCenter\src\test\resources
+2024-02-08 16:32:18,460 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-08 16:32:18,534 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-08 16:32:18,538 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\win10pro\Desktop\primo_progetto_angular_java\primo_e-commerce\back-end\VitaliaMedCenter\src\test\resources
+2024-02-08 17:03:43,319 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-08 17:03:43,493 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-08 17:03:43,498 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\win10pro\Desktop\primo_progetto_angular_java\primo_e-commerce\back-end\VitaliaMedCenter\src\test\resources
+2024-02-08 17:03:46,542 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-08 17:03:46,585 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-08 17:03:46,590 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\win10pro\Desktop\primo_progetto_angular_java\primo_e-commerce\back-end\VitaliaMedCenter\src\test\resources
+2024-02-08 17:05:53,490 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-08 17:05:53,502 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-08 17:05:53,505 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\win10pro\Desktop\primo_progetto_angular_java\primo_e-commerce\back-end\VitaliaMedCenter\src\test\resources
+2024-02-08 17:24:47,633 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-02-08 17:24:47,668 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-02-08 17:24:47,672 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\win10pro\Desktop\primo_progetto_angular_java\primo_e-commerce\back-end\VitaliaMedCenter\src\test\resources
