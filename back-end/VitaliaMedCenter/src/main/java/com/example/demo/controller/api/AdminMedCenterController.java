@@ -33,6 +33,8 @@ public class AdminMedCenterController {
 	public AdminMedCenterController() {
 
 	}
+	
+	@CrossOrigin(origins = "http://localhost:4200")
 
 	// VISUALIZZA TUTTI
 	// Medico

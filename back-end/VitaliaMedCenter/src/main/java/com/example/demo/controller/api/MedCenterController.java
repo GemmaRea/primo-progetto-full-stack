@@ -42,9 +42,10 @@ public class MedCenterController {
 	public MedCenterController() {
 	}
 
+	@CrossOrigin(origins = "http://localhost:4200")
 	// getAll per le varie table
 	// medico
-	@CrossOrigin(origins = "http://localhost:4200")
+	
 	@GetMapping("/api/medico")
 
 	public Iterable<Medico> getAllMedico() {
