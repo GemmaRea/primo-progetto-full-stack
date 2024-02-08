@@ -12,5 +12,5 @@ public class VitaliaMedCenterApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VitaliaMedCenterApplication.class, args);
 	}
-	   
+
 }
